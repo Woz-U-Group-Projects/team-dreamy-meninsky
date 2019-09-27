@@ -21,7 +21,3 @@ import { RegistrationComponent } from './registration/registration.component';
 })
 export class AppModule {}
 
-
-
-
-  
