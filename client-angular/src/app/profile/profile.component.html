@@ -29,25 +29,24 @@
     </mat-toolbar>
   
    <div>
-
-       <h2>First Name: <input placeholder="First Name"> Last Name: <input placeholder="Last Name"> </h2>
+ 
+    <h2><input [(ngModel)]="user.firstName" placeholder="First Name"/> <input [(ngModel)]="user.lastName" placeholder="Last Name"/> </h2>
        <img src="/assets/profilepic.png">
        
       <div class="profile-userbuttons">
         <button type="button" class="btn btn-primary btn-sm">Follow</button>
         <button type="button" class="btn btn-danger btn-sm">Message</button>
       </div>     <h3>About Me</h3>
+      
             
-            
-            <h4>Location: <input placeholder="Location"></h4>
-            <h4>Work: <input placeholder="Work"></h4>
-            <h4>Education: <input placeholder="Education"></h4>
-            <h4>Interest: <input placeholder="Interest"></h4>
+            <h4><input [(ngModel)]="user.location" placeholder="Location"></h4>
+            <h4><input [(ngModel)]="user.work" placeholder="Work"></h4>
+            <h4><input [(ngModel)]="user.education" placeholder="Education"></h4>
+            <h4><input [(ngModel)]="user.interest" placeholder="Interest"></h4>
 
            <div class="container" align="center">
                        <label>
-            <button type="submit">Submit</button>
+            <button (click)="submit()">Submit</button>
             </label> 
    </div>
-  
-  
+   
