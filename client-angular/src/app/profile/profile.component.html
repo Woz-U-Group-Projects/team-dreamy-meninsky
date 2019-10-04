@@ -30,12 +30,16 @@
   
    <div>
  
-    <h2><input [(ngModel)]="user.firstName" placeholder="First Name"/> <input [(ngModel)]="user.lastName" placeholder="Last Name"/> </h2>
-       <img src="/assets/profilepic.png">
+    <h2><input [(ngModel)]="user.firstName" placeholder="First Name"/> <input [(ngModel)]="user.lastName" placeholder="Last Name"/>
+    <div class="profile-userbuttons">
+      <button type="button" class="btn btn-primary btn-sm">Follow</button>
+      <button type="button" class="btn btn-danger btn-sm">Message</button></div></h2>
+       <img src="/assets/profilepic.png"><div>
+        <label for="photo">Update profile photo</label>
+        <input type="file" name="photo" id="photo" />
+      </div>
        
-      <div class="profile-userbuttons">
-        <button type="button" class="btn btn-primary btn-sm">Follow</button>
-        <button type="button" class="btn btn-danger btn-sm">Message</button>
+     
       </div>     <h3>About Me</h3>
       
             
