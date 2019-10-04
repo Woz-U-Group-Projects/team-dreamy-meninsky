@@ -17,8 +17,8 @@
         color: white;
     }
     img{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
         align-items: center;
         }
 
@@ -35,5 +35,5 @@
        float: center;
    }
    h2 {
-       padding: 30px;
+       padding: 20px;
    }

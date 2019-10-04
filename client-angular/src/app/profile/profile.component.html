@@ -29,39 +29,28 @@
     </mat-toolbar>
   
    <div>
-
-
-       <h2>First Name: <input placeholder="First Name"> Last Name: <input placeholder="Last Name"> </h2>
-       <img src="/assets/profilepic.png">
+ 
+    <h2><input [(ngModel)]="user.firstName" placeholder="First Name"/> <input [(ngModel)]="user.lastName" placeholder="Last Name"/>
+    <div class="profile-userbuttons">
+      <button type="button" class="btn btn-primary btn-sm">Follow</button>
+      <button type="button" class="btn btn-danger btn-sm">Message</button></div></h2>
+       <img src="/assets/profilepic.png"><div>
+        <label for="photo">Update profile photo</label>
+        <input type="file" name="photo" id="photo" />
+      </div>
        
-      <div class="profile-userbuttons">
-        <button type="button" class="btn btn-primary btn-sm">Follow</button>
-        <button type="button" class="btn btn-danger btn-sm">Message</button>
+     
       </div>     <h3>About Me</h3>
+      
             
-            
-            <h4>Location: <input placeholder="Location"></h4>
-            <h4>Work: <input placeholder="Work"></h4>
-            <h4>Education: <input placeholder="Education"></h4>
-            <h4>Interest: <input placeholder="Interest"></h4>
+            <h4><input [(ngModel)]="user.location" placeholder="Location"></h4>
+            <h4><input [(ngModel)]="user.work" placeholder="Work"></h4>
+            <h4><input [(ngModel)]="user.education" placeholder="Education"></h4>
+            <h4><input [(ngModel)]="user.interest" placeholder="Interest"></h4>
 
            <div class="container" align="center">
                        <label>
-            <button type="submit">Submit</button>
+            <button (click)="submit()">Submit</button>
             </label> 
    </div>
-  
-  
-
-<!--        <h1>First Name: <input placeholder="First Name"> Last Name: <input placeholder="Last Name"> </h1>
-            <h2>About Me</h2>
-            
-            
-            <h3>Location: <input placeholder="Location"></h3>
-            <h3>Work: <input placeholder="Work"></h3>
-            <h3>Education: <input placeholder="Education"></h3>
-            <h3>Interest: <input placeholder="Interest"></h3>
-  
-      
-   </div> -->
-
+   
