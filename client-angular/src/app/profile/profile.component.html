@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<!-- <mat-toolbar color="primary">
     <mat-toolbar-row>
      <span>Lyfe Lynes</span>  
     <span>Profile</span>
@@ -26,13 +26,43 @@
     
     <button mat-icon-button [matMenuTriggerFor]="menu"></button>
      </mat-toolbar-row>
-    </mat-toolbar>
-  
-   <div>
-
-
-       <h2>First Name: <input placeholder="First Name"> Last Name: <input placeholder="Last Name"> </h2>
-       <img src="/assets/profilepic.png">
+    </mat-toolbar> -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light static-top" style="background-color: rgb(151, 152, 241)">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lyfe Lynes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Logout</a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+    <div class="userS">
+      <div class="userfl">
+        <input placeholder="First Name"> 
+        <br>
+        <input placeholder="Last Name">
+      </div>
+      <div class="useri">
+        <img src="/assets/profilepic.png">
+      </div>
+    </div>
+   <div>     
+       
        
       <div class="profile-userbuttons">
         <button type="button" class="btn btn-primary btn-sm">Follow</button>
@@ -45,26 +75,19 @@
        
        <h3>About Me</h3>
             
-            
-            <h4>Location: <input placeholder="Location"></h4>
-            <h4>Work: <input placeholder="Work"></h4>
-            <h4>Education: <input placeholder="Education"></h4>
-            <h4>Interest: <input placeholder="Interest"></h4>
+            <form action="">
+                <h4>Location: <input placeholder="Location"></h4>
+                <h4>Work: <input placeholder="Work"></h4>
+                <h4>Education: <input placeholder="Education"></h4>
+                <h4>Interest: <input placeholder="Interest"></h4>
+            </form>
+           
 
       
    </div>
   
   
 
-<!--        <h1>First Name: <input placeholder="First Name"> Last Name: <input placeholder="Last Name"> </h1>
-            <h2>About Me</h2>
-            
-            
-            <h3>Location: <input placeholder="Location"></h3>
-            <h3>Work: <input placeholder="Work"></h3>
-            <h3>Education: <input placeholder="Education"></h3>
-            <h3>Interest: <input placeholder="Interest"></h3>
-  
-      
-   </div> -->
 
+
+  </body>

@@ -15,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
+  // tslint:disable-next-line: max-line-length
   declarations: [AppComponent, ProjectDisplayComponent, LoginComponent, ProfileComponent, RegisterComponent, AboutComponent, ContactComponent],
 
   imports: [BrowserModule, BrowserAnimationsModule, CustomMaterialModule, AppRoutingModule, FormsModule, HttpClientModule],
