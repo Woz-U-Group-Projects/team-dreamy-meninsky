@@ -1,11 +1,10 @@
-<mat-toolbar color="primary">
+<!-- <mat-toolbar color="primary">
     <mat-toolbar-row>
      <span>Lyfe Lynes</span>  
     <span>Profile</span>
         <span class="example-fill-remaining-space"></span>
         <span class="align-center"></span>
         <span class="example-spacer"></span>
-
         <a href ="/about"><button mat-button>About</button></a>
         <a href ="/contact"><button mat-button>Contact</button></a>
         
@@ -22,35 +21,72 @@
         <span>Disable Notifications</span>
       </button>
     </mat-menu>
-    <a href ="/logout"><button mat-button>Logout</button></a>
+    <a href ="/login"><button mat-button>Logout</button></a>
     
     <button mat-icon-button [matMenuTriggerFor]="menu"></button>
      </mat-toolbar-row>
-    </mat-toolbar>
-  
-   <div>
- 
-    <h2><input [(ngModel)]="user.firstName" placeholder="First Name"/> <input [(ngModel)]="user.lastName" placeholder="Last Name"/>
-    <div class="profile-userbuttons">
-      <button type="button" class="btn btn-primary btn-sm">Follow</button>
-      <button type="button" class="btn btn-danger btn-sm">Message</button></div></h2>
-       <img src="/assets/profilepic.png"><div>
-        <label for="photo">Update profile photo</label>
-        <input type="file" name="photo" id="photo" />
-      </div>
-       
-     
-      </div>     <h3>About Me</h3>
-      
+    </mat-toolbar> -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light static-top" style="background-color: rgb(151, 152, 241)">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lyfe Lynes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
             
-            <h4><input [(ngModel)]="user.location" placeholder="Location"></h4>
-            <h4><input [(ngModel)]="user.work" placeholder="Work"></h4>
-            <h4><input [(ngModel)]="user.education" placeholder="Education"></h4>
-            <h4><input [(ngModel)]="user.interest" placeholder="Interest"></h4>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Logout</a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+    <div class="userS">
+      <div class="userfl">
+        <input placeholder="First Name"> 
+        <br>
+        <input placeholder="Last Name">
+      </div>
+      <div class="useri">
+        <img src="/assets/profilepic.png">
+      </div>
+    </div>
+   <div>     
+       
+       
+      <div class="profile-userbuttons">
+        <button type="button" class="btn btn-primary btn-sm">Follow</button>
+        <button type="button" class="btn btn-danger btn-sm">Message</button>
+      </div>
+    
+    
+     
+				
+       
+       <h3>About Me</h3>
+            
+            <form action="">
+                <h4>Location: <input placeholder="Location"></h4>
+                <h4>Work: <input placeholder="Work"></h4>
+                <h4>Education: <input placeholder="Education"></h4>
+                <h4>Interest: <input placeholder="Interest"></h4>
+            </form>
+           
 
-           <div class="container" align="center">
-                       <label>
-            <button (click)="submit()">Submit</button>
-            </label> 
+      
    </div>
-   
+  
+  
+
+
+
+  </body>
