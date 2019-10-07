@@ -1,4 +1,4 @@
-.example-card {
+/* .example-card {
     width: 400px;
     margin: 10% auto;
     }
@@ -16,24 +16,56 @@
     a {
         color: white;
     }
-    img{
-        width: 250px;
-        height: 150px;
-        align-items: center;
-        }
-
    .div{
        align-items: center;
        margin: center;
    }
-   h3, h4 {
+   h3 {
        text-align: center;
    }
-   .container {
-       align-content: center;
-       margin: 0 auto;
-       float: center;
-   }
-   h2 {
-       padding: 20px;
-   }
+     */
+     
+     body {
+        background: #717375;
+        background: linear-gradient(to right, rgb(167, 168, 240), rgb(233, 233, 233));
+      }
+      
+      img{
+        width: 200px;
+        height: 200px;
+        align-items: center;
+        }
+        .userS{
+            height: auto;
+            border-radius: 2rem;
+        }
+        .userfl{
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            margin-bottom: 0;
+            /* Override default `<label>` margin */
+            line-height: 1.5;
+            color: #495057;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            transition: all .1s ease-in-out;
+        }
+        input{
+            padding: var(--input-padding-y) var(--input-padding-x);
+
+        }
+        .btn {
+            font-size: 80%;
+            border-radius: 5rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+            padding: 1rem;
+            transition: all 0.2s;
+          }
+          form{
+              margin: 0 auto;
+          }
+     
