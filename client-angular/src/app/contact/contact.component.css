@@ -1,3 +1,7 @@
+body {
+    background: #717375;
+    background: linear-gradient(to right, rgb(167, 168, 240), rgb(233, 233, 233));
+  }
 p {
     font-weight: bold;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

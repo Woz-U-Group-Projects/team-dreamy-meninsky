@@ -10,9 +10,11 @@ import { User } from '../user';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-    user: User = new User();
+  user: User = new User();
 
-    constructor(private userService: UserService) {}
+    constructor(private userService: UserService) {
+    this.userService.getUsers();
+    }
 
     ngOnInit() {
 

@@ -38,6 +38,8 @@ public class HomeController {
     public void register(@RequestBody User newUser) {
     	userService.Save(newUser);
     }
+  
+    
     
 //    @PostMapping("/register")
 //    public String createUser(@RequestParam("username") String username, @RequestParam("password") String password, Model model) {
